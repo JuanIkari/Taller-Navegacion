@@ -17,6 +17,10 @@ export default function Screen1({ navigation }) {
         title="Ir a la pantalla 3"
         onPress={() => navigation.navigate("Screen3")}
       />
+      <Button
+        title="Ir a la pantalla 1 replace"
+        onPress={() => navigation.replace("Screen1")}
+      />
     </View>
   );
 }

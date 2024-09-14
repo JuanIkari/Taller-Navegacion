@@ -28,7 +28,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
   },
-  button: {
-    paddingBottom: 10,
-  },
 });
