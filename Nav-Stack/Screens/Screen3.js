@@ -17,6 +17,10 @@ export default function Screen3({ navigation, route }) {
         onPress={() => navigation.navigate("Screen2")}
       />
       <Button title="Regresar" onPress={() => navigation.goBack()} />
+      <Button
+        title="reset"
+        onPress={() => navigation.reset({ routes: [{ name: "Home" }] })}
+      />
     </View>
   );
 }
