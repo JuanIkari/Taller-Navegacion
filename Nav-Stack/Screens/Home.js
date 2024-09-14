@@ -10,16 +10,20 @@ export default function Screen1({ navigation }) {
         onPress={() => navigation.navigate("Screen1")}
       />
       <Button
+        title="Ir a la pantalla 1 replace"
+        onPress={() => navigation.replace("Screen1")}
+      />
+      <Button
         title="Ir a la pantalla 2"
-        onPress={() => navigation.navigate("Screen2")}
+        onPress={() => navigation.navigate("Screen2", { Autorizacion: true })}
+      />
+      <Button
+        title="Ir a la pantalla 2 sin autorizacion"
+        onPress={() => navigation.navigate("Screen2", { Autorizacion: false })}
       />
       <Button
         title="Ir a la pantalla 3"
         onPress={() => navigation.navigate("Screen3")}
-      />
-      <Button
-        title="Ir a la pantalla 1 replace"
-        onPress={() => navigation.replace("Screen1")}
       />
     </View>
   );

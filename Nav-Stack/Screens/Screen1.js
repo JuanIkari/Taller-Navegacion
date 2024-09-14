@@ -10,7 +10,6 @@ export default function Screen1({ navigation }) {
         onPress={() =>
           navigation.navigate("Screen2", { message: "hola desde screen 1" })
         }
-        style={styles.button}
       />
       <Button
         title="Ir a la pantalla 3"

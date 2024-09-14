@@ -1,8 +1,22 @@
 import * as React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text, Alert } from "react-native";
 
 export default function Screen2({ navigation, route }) {
   const { message = "" } = route.params || {};
+
+  React.useEffect(() => {
+    const { Autorizacion } = route.params || {};
+
+    if (Autorizacion) {
+      Alert.alert("Acceso permitido", "Bienvenido a la pantalla 2");
+    } else {
+      Alert.alert(
+        "Acceso denegado",
+        "No tienes autorización para acceder a esta pantalla"
+      );
+      navigation.goBack();
+    }
+  }, [route.params]);
 
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
