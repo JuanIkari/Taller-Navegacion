@@ -13,6 +13,7 @@ export default function Screen3({ navigation }) {
         title="Ir a la pantalla 2"
         onPress={() => navigation.navigate("Screen2")}
       />
+      <Button title="Regresar" onPress={() => navigation.goBack()} />
     </View>
   );
 }
