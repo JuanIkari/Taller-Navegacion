@@ -13,8 +13,8 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Image" component={ImageScreen} />
-        <Tab.Screen name="Quiz" component={QuizScreen} />
         <Tab.Screen name="Options" component={OptionScreen} />
+        <Tab.Screen name="Quiz" component={QuizScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
