@@ -27,6 +27,11 @@ export default function App() {
 
             return <Ionicons name={iconName} size={size} color={color} />;
           },
+          tabBarStyle: {
+            paddingVertical: 10,
+            paddingHorizontal: 20,
+            height: 60,
+          },
         })}
       >
         <Tab.Screen name="Image" component={ImageScreen} />
